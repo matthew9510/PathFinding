@@ -25,7 +25,6 @@ def main():
     while frontier.length() is not 0:
         current = frontier.dequeue()
         for next in graph.neighbors(current):
-            #if visited[next] is not True:
             if next not in cameFrom:
                 cameFrom[next] = current
                 frontier.enqueue(next)

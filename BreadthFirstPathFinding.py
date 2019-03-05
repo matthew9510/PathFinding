@@ -26,7 +26,6 @@ def main():
             break
 
         for next in graph.neighbors(current):
-            # if visited[next] is not True:
             if next not in visited:
                 visited[next] = True
                 frontier.enqueue(next)

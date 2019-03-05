@@ -30,16 +30,13 @@ class Queue:
         self.queue = list()
 
     def enqueue(self, data):
-        #if len(self.queue) < self.maxSize: # this doesn't keep accurate length b/c items poped arre technically still in list
         if self.size() < self.maxSize:
-            #self.queue[self.tail] = data
             self.queue.append(data)
             self.tail += 1
             return True
         return "Queue is full"
 
     def dequeue(self):
-        #if len(self.queue) > 0:
         if self.size() > 0:
             dataToReturn = self.queue[self.head]
             self.head += 1

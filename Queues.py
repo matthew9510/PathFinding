@@ -37,10 +37,6 @@ class Queue:
     
     def printQueue(self):
         """ Prints / Returns the queue """
-        # if len(self.queue) > 0:
-        #     print(self.queue)
-        # else:
-        #     print("Empty queue")
         return self.queue
 
     def length(self):
